@@ -18,10 +18,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto">
-                <li class="search-bar input-group">
-                    <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
-                        <span class="d-lg-none d-md-block">{{ __('Search') }}</span>
-                    </button>
+                <li >
+                   <a class="nav-item nav-link" href="https://kuniversity.maps.arcgis.com/home/group.html?id=21faf56ea8aa4eb087c588316171870e#overview">Resources</a>
                 </li>
                
               <li>

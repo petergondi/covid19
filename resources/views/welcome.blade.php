@@ -12,13 +12,13 @@
 </style>
 
 <!-- Resources -->
-<script src="http://covid19.assets.co.ke/js/core.js')}}"></script>
+<script src="http://covid19.assets.co.ke/js/core.js"></script>
 
 <script src="http://covid19.assets.co.ke/js/map.js"></script>
 <script src="http://covid19.assets.co.ke/js/kenya.js"></script>
 <script src="http://covid19.assets.co.ke/js/covidtimeline.js"></script>
 <script src="http://covid19.assets.co.ke/js/totalcovid.js"></script>
-<script src="http://covid19.assets.co.ke/js/charts.js'"></script>
+<script src="http://covid19.assets.co.ke/js/charts.js"></script>
 <script src="http://covid19.assets.co.ke/js/datavitz.js"></script>
 <script src="http://covid19.assets.co.ke/js/animated.js"></script>
 
