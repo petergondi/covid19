@@ -10,10 +10,10 @@
 
 </style>
 <!-- Resources -->
-<script src="{{ asset('js/core.js')}}"></script>
-<script src="{{ asset('js/charts.js')}}"></script>
-<script src="{{ asset('js/dataviz.js.js')}}"></script>
-<script src="{{ asset('js/animated.js')}}"></script>
+<script src="http://covid19.assets.co.ke/js/core.js')}}"></script>
+<script src="http://covid19.assets.co.ke/js/charts.js'"></script>
+<script src="http://covid19.assets.co.ke/js/datavitz.js"></script>
+<script src="http://covid19.assets.co.ke/js/animated.js"></script>
 <div  class="sidebar">
     <div style="background-color:#212327;border-style: double;" class="sidebar-wrapper">
     
@@ -86,7 +86,7 @@ chart2.data = [{
   "total": 202
 }, {
   "county": "Mombasa",
-  "total": 67
+  "total": 77
 }, {
   "county": "Kilifi",
   "total": 8
