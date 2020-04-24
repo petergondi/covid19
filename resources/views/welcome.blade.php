@@ -18,11 +18,10 @@
 <script src="{{ asset('js/usa.js')}}"></script>
 <script src="{{ asset('js/covidtimeline.js')}}"></script>
 <script src="{{ asset('js/totalcovid.js')}}"></script>
-{{-- <script src="https://covid.amCharts.com/data/js/us_timeline.js"></script> --}}
-{{-- <script src="https://covid.amCharts.com/data/js/us_total_timeline.js"></script> --}}
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="{{ asset('js/charts.js')}}"></script>
+<script src="{{ asset('js/dataviz.js.js')}}"></script>
+<script src="{{ asset('js/animated.js')}}"></script>
+
 
 
 <!-- Chart code -->

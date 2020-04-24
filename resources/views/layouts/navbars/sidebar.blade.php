@@ -10,10 +10,10 @@
 
 </style>
 <!-- Resources -->
-<script src="https://www.amcharts.com/lib/4/core.js"></script>
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="{{ asset('js/core.js')}}"></script>
+<script src="{{ asset('js/charts.js')}}"></script>
+<script src="{{ asset('js/dataviz.js.js')}}"></script>
+<script src="{{ asset('js/animated.js')}}"></script>
 <div  class="sidebar">
     <div style="background-color:#212327;border-style: double;" class="sidebar-wrapper">
     
