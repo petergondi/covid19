@@ -105,8 +105,10 @@ labelTemplate.verticalCenter = "middle";
 labelTemplate.dy = 10; // moves it a bit down;
 labelTemplate.inside = false; // this is done to avoid settings which are not suitable when label is rotated
 
+
 var valueAxis = chart2.yAxes.push(new am4charts.ValueAxis());
 valueAxis.renderer.grid.template.disabled = true;
+valueAxis.renderer.labels.template.fill = am4core.color("#FFFFFF");
 
 var series = chart2.series.push(new am4charts.ColumnSeries3D());
 series.dataFields.valueY = "total";
@@ -115,10 +117,12 @@ series.name = "county";
 series.tooltipText = "{categoryX}: [bold]{valueY}[/]";
 series.columns.template.fillOpacity = .8;
 
+
 var columnTemplate = series.columns.template;
 columnTemplate.strokeWidth = 2;
 columnTemplate.strokeOpacity = 1;
 columnTemplate.stroke = am4core.color("#FFFFFF");
+
 
 columnTemplate.adapter.add("fill", function(fill, target) {
   return chart2.colors.getIndex(target.dataItem.index);
