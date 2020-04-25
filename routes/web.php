@@ -19,6 +19,10 @@ Route::get('/', function () {
 Route::get('/globe', 'HomeController@index')->name('home');
 
 // Auth::routes();
+// Route::get('/upload', 'PageController@upload')->name('upload');
+// Route::post('/gender', 'PageController@saveGenderCsv')->name('gender.save');
+
+// 
 
 // Route::get('/home', 'HomeController@index')->name('home');
 // Auth::routes();

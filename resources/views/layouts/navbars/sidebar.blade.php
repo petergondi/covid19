@@ -14,6 +14,9 @@
 <script src="http://covid19.assets.co.ke/js/charts.js"></script>
 <script src="http://covid19.assets.co.ke/js/datavitz.js"></script>
 <script src="http://covid19.assets.co.ke/js/animated.js"></script>
+<script src="http://covid19.assets.co.ke/js/gender.js"></script>
+<script src="http://covid19.assets.co.ke/js/topcounty.js"></script>
+
 <div  class="sidebar">
     <div style="background-color:#212327;border-style: double;" class="sidebar-wrapper">
     
@@ -41,13 +44,7 @@ am4core.useTheme(am4themes_animated);
 var chart1 = am4core.create("chartdiv1", am4charts.PieChart);
 
 // Add data
-chart1.data = [{
-  "gender": "Male",
-  "total": 168
-}, {
-  "gender": "Female",
-  "total": 128
-}];
+chart1.data=gender; 
 
 // Add and configure Series
 var pieSeries = chart1.series.push(new am4charts.PieSeries());
@@ -66,6 +63,8 @@ pieSeries.slices.template.strokeWidth = 0;
 
 chart1.legend = new am4charts.Legend();
 chart1.legend.position = "bottom";
+chart1.legend.labels.template.fill = am4core.color("#FFFFFF");
+chart1.legend.valueLabels.template.fill = am4core.color("#FFFFFF");
 
 }); // end am4core.ready()
 
@@ -81,25 +80,7 @@ var chart2 = am4core.create("chartdiv2", am4charts.XYChart3D);
 //chart2.angle = 35;
 
 // Add data
-chart2.data = [{
-  "county": "Nairobi",
-  "total": 202
-}, {
-  "county": "Mombasa",
-  "total": 77
-}, {
-  "county": "Kilifi",
-  "total": 8
-}, {
-  "county": "Mandera",
-  "total": 8
-}, {
-  "county": "Kiambu",
-  "total": 5
-}, {
-  "county": "Kajiado",
-  "total": 3
-}];
+chart2.data = county;
 
 // Create axes
 var categoryAxis = chart2.xAxes.push(new am4charts.CategoryAxis());
@@ -107,6 +88,8 @@ categoryAxis.dataFields.category = "county";
 categoryAxis.renderer.labels.template.rotation = 270;
 categoryAxis.renderer.labels.template.hideOversized = false;
 categoryAxis.renderer.minGridDistance = 20;
+categoryAxis.renderer.labels.template.fill = am4core.color("#FFFFFF");
+categoryAxis.renderer.labels.template.fontSize = 15;
 categoryAxis.renderer.labels.template.horizontalCenter = "right";
 categoryAxis.renderer.labels.template.verticalCenter = "middle";
 categoryAxis.tooltip.label.rotation = 270;
